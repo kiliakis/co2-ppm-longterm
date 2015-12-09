@@ -1,4 +1,4 @@
-CO2 PPM Trends and CO2 PPM historical record from Vostok ice core. Trend data are sourced from the US Government's Earth System Research Laboratory, Global Monitoring Division. Two main series are provided: the Mauna Loa series (which has the longest continuous series since 1958) and a Global Average series (a global average over marine surface sites). Historical records are sourced from Carbon Dioxide Information Analysis Center. The provided dataset comes from Vostok station in East Antartica.
+CO2 PPM Trends and Historical Record. Trend data are sourced from the US Government's Earth System Research Laboratory, Global Monitoring Division. Two main series are provided: the Mauna Loa series (which has the longest continuous series since 1958) and a Global Average series (a global average over marine surface sites). Historical records are sourced from Carbon Dioxide Information Analysis Center. The provided dataset comes from Vostok station in East Antartica.
 
 ## Data
 

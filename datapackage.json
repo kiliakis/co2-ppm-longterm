@@ -1,11 +1,22 @@
 {
-  "name": "co2-ppm",
-  "title": "CO2 PPM - Trends in Atmospheric Carbon Dioxide",
-  "description": "Data are sourced from the US Government's Earth System Research Laboratory, Global Monitoring Division. Two main series are provided: the Mauna Loa series (which has the longest continuous series since 1958) and a Global Average series (a global average over marine surface sites).",
-  "homepage": "http://www.esrl.noaa.gov/gmd/ccgg/trends",
+  "name": "co2-ppm-longterm",
+  "title": "CO2 PPM Trends and CO2 PPM historical record from Vostok ice core",
+  "description": "Trend data are sourced from the US Government's Earth System Research Laboratory, Global Monitoring Division. Two main series are provided: the Mauna Loa series (which has the longest continuous series since 1958) and a Global Average series (a global average over marine surface sites). Historical records are sourced from Carbon Dioxide Information Analysis Center. The provided dataset comes from Vostok station in East Antartica. ",
+  "homepages": [ 
+  	{ 
+  		"url": "http://www.esrl.noaa.gov/gmd/ccgg/trends"
+  	},
+  	{
+  		"url": "http://cdiac.ornl.gov/trends/co2/vostok.html"
+  	}
+  ],
   "version": "0.1.0",
   "license": "ODC-PDDL-1.0",
   "sources": [
+  	{
+      "name": "Historical Carbon Dioxide Record from the Vostok Ice Core",
+      "web": "http://cdiac.ornl.gov/ftp/trends/co2/vostok.icecore.co2"
+    },
     {
       "name": "Trends in Atmospheric Carbon Dioxide, Mauna Loa, Hawaii",
       "web": "http://www.esrl.noaa.gov/gmd/ccgg/trends/index.html"
@@ -16,6 +27,36 @@
     }
   ],
   "resources": [
+ 	{
+      "name": "co2-ppm-vostok",
+      "path": "data/co2-ppm-vostok.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "Age of Ice",
+            "description": "Age of ice in years Before Present",
+            "type": "number"
+          },
+          {
+            "name": "CO2 concentration",
+            "description": "Carbon dioxide concentration in parts per million by volume",
+            "type": "number"
+          },
+          {
+            "name": "Age of Air",
+            "description": "Mean age of air in years Before Present",
+            "type": "number"
+          },
+          {
+            "name": "Depth",
+            "description": "Depth of ice core in meters",
+            "type": "number"
+          }
+        ]
+      }
+    },
     {
       "name": "co2-mm-mlo",
       "path": "data/co2-mm-mlo.csv",
@@ -196,6 +237,16 @@
         "group": "Date",
         "series": ["Interpolated", "Trend"],
         "graphType": "lines-and-points"
+      }
+    },
+    {
+      "id": "Historical Record",
+      "label": "Historical Record",
+      "type": "Graph",
+      "state": {
+        "graphType": "lines",
+        "group": "Age of Ice",
+        "series": [ "CO2 concentration" ]
       }
     }
   ]

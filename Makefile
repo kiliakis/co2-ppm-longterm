@@ -1,7 +1,14 @@
-all:
-	python scripts/process.py
+#version="0.1.0"
+
+all: detailed vostok
+
+detailed:
+	bash scripts/process.sh
+
+vostok:
+	python scripts/process-ice-core.py
 
 clean:
-	rm data/co2-ppm-vostok.csv cache/co2-ppm-vostok.csv
+	rm data/* tmp/*
 
 .PHONY: clean

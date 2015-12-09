@@ -1,0 +1,140 @@
+# --------------------------------------------------------------------
+# USE OF NOAA ESRL DATA
+# 
+# These data are made freely available to the public and the
+# scientific community in the belief that their wide dissemination
+# will lead to greater understanding and new scientific insights.
+# The availability of these data does not constitute publication
+# of the data.  NOAA relies on the ethics and integrity of the user to
+# insure that ESRL receives fair credit for their work.  If the data 
+# are obtained for potential use in a publication or presentation, 
+# ESRL should be informed at the outset of the nature of this work.  
+# If the ESRL data are essential to the work, or if an important 
+# result or conclusion depends on the ESRL data, co-authorship
+# may be appropriate.  This should be discussed at an early stage in
+# the work.  Manuscripts using the ESRL data should be sent to ESRL
+# for review before they are submitted for publication so we can
+# insure that the quality and limitations of the data are accurately
+# represented.
+# 
+# Contact:   Pieter Tans (303 497 6678; pieter.tans@noaa.gov)
+# 
+# File Creation:  Mon Dec  7 12:08:32 2015
+# 
+# RECIPROCITY
+# 
+# Use of these data implies an agreement to reciprocate.
+# Laboratories making similar measurements agree to make their
+# own data available to the general public and to the scientific
+# community in an equally complete and easily accessible form.
+# Modelers are encouraged to make available to the community,
+# upon request, their own tools used in the interpretation
+# of the ESRL data, namely well documented model code, transport
+# fields, and additional information necessary for other
+# scientists to repeat the work and to run modified versions.
+# Model availability includes collaborative support for new
+# users of the models.
+# --------------------------------------------------------------------
+#  
+#  
+# See www.esrl.noaa.gov/gmd/ccgg/trends/ for additional details.
+#  
+# Data from March 1958 through April 1974 have been obtained by C. David Keeling
+# of the Scripps Institution of Oceanography (SIO) and were obtained from the
+# Scripps website (scrippsco2.ucsd.edu).
+#
+# The "average" column contains the monthly mean CO2 mole fraction determined
+# from daily averages.  The mole fraction of CO2, expressed as parts per million
+# (ppm) is the number of molecules of CO2 in every one million molecules of dried
+# air (water vapor removed).  If there are missing days concentrated either early
+# or late in the month, the monthly mean is corrected to the middle of the month
+# using the average seasonal cycle.  Missing months are denoted by -99.99.
+# The "interpolated" column includes average values from the preceding column
+# and interpolated values where data are missing.  Interpolated values are
+# computed in two steps.  First, we compute for each month the average seasonal
+# cycle in a 7-year window around each monthly value.  In this way the seasonal
+# cycle is allowed to change slowly over time.  We then determine the "trend"
+# value for each month by removing the seasonal cycle; this result is shown in
+# the "trend" column.  Trend values are linearly interpolated for missing months.
+# The interpolated monthly mean is then the sum of the average seasonal cycle
+# value and the trend value for the missing month.
+#
+# NOTE: In general, the data presented for the last year are subject to change, 
+# depending on recalibration of the reference gas mixtures used, and other quality
+# control procedures. Occasionally, earlier years may also be changed for the same
+# reasons.  Usually these changes are minor.
+#
+# CO2 expressed as a mole fraction in dry air, micromol/mol, abbreviated as ppm
+#
+#  (-99.99 missing data;  -1 no data for #daily means in month)
+#
+#            decimal     average   interpolated    trend    #days
+#             date                             (season corr)
+1958   3    1958.208      315.71      315.71      314.62     -1
+1958   4    1958.292      317.45      317.45      315.29     -1
+1958   5    1958.375      317.50      317.50      314.71     -1
+1958   6    1958.458      -99.99      317.10      314.85     -1
+1958   7    1958.542      315.86      315.86      314.98     -1
+1958   8    1958.625      314.93      314.93      315.94     -1
+1958   9    1958.708      313.20      313.20      315.91     -1
+1958  10    1958.792      -99.99      312.66      315.61     -1
+1958  11    1958.875      313.33      313.33      315.31     -1
+1958  12    1958.958      314.67      314.67      315.61     -1
+1959   1    1959.042      315.62      315.62      315.70     -1
+1959   2    1959.125      316.38      316.38      315.88     -1
+1959   3    1959.208      316.71      316.71      315.62     -1
+1959   4    1959.292      317.72      317.72      315.56     -1
+1959   5    1959.375      318.29      318.29      315.50     -1
+1959   6    1959.458      318.15      318.15      315.92     -1
+1959   7    1959.542      316.54      316.54      315.66     -1
+1959   8    1959.625      314.80      314.80      315.81     -1
+1959   9    1959.708      313.84      313.84      316.55     -1
+1959  10    1959.792      313.26      313.26      316.19     -1
+1959  11    1959.875      314.80      314.80      316.78     -1
+1959  12    1959.958      315.58      315.58      316.52     -1
+1960   1    1960.042      316.43      316.43      316.51     -1
+1960   2    1960.125      316.97      316.97      316.47     -1
+1960   3    1960.208      317.58      317.58      316.49     -1
+1960   4    1960.292      319.02      319.02      316.86     -1
+1960   5    1960.375      320.03      320.03      317.24     -1
+1960   6    1960.458      319.59      319.59      317.36     -1
+1960   7    1960.542      318.18      318.18      317.30     -1
+1960   8    1960.625      315.91      315.91      316.92     -1
+1960   9    1960.708      314.16      314.16      316.87     -1
+1960  10    1960.792      313.83      313.83      316.76     -1
+1960  11    1960.875      315.00      315.00      316.98     -1
+1960  12    1960.958      316.19      316.19      317.13     -1
+1961   1    1961.042      316.93      316.93      317.03     -1
+1961   2    1961.125      317.70      317.70      317.28     -1
+1961   3    1961.208      318.54      318.54      317.47     -1
+1961   4    1961.292      319.48      319.48      317.27     -1
+1961   5    1961.375      320.58      320.58      317.70     -1
+1961   6    1961.458      319.77      319.77      317.48     -1
+1961   7    1961.542      318.57      318.57      317.70     -1
+1961   8    1961.625      316.79      316.79      317.80     -1
+1961   9    1961.708      314.80      314.80      317.49     -1
+1961  10    1961.792      315.38      315.38      318.35     -1
+1961  11    1961.875      316.10      316.10      318.13     -1
+1961  12    1961.958      317.01      317.01      317.94     -1
+1962   1    1962.042      317.94      317.94      318.06     -1
+1962   2    1962.125      318.56      318.56      318.11     -1
+1962   3    1962.208      319.68      319.68      318.57     -1
+1962   4    1962.292      320.63      320.63      318.45     -1
+1962   5    1962.375      321.01      321.01      318.20     -1
+1962   6    1962.458      320.55      320.55      318.27     -1
+1962   7    1962.542      319.58      319.58      318.67     -1
+1962   8    1962.625      317.40      317.40      318.48     -1
+1962   9    1962.708      316.26      316.26      319.03     -1
+1962  10    1962.792      315.42      315.42      318.33     -1
+1962  11    1962.875      316.69      316.69      318.62     -1
+1962  12    1962.958      317.69      317.69      318.61     -1
+1963   1    1963.042      318.74      318.74      318.91     -1
+1963   2    1963.125      319.08      319.08      318.68     -1
+1963   3    1963.208      319.86      319.86      318.69     -1
+1963   4    1963.292      321.39      321.39      319.09     -1
+1963   5    1963.375      322.25      322.25      319.39     -1
+1963   6    1963.458      321.47      321.47      319.16     -1
+1963   7    1963.542      319.74      319.74      318.77     -1
+1963   8    1963.625      317.77      317.77      318.83     -1
+1963   9    1963.708      316.21      316.21      319.06     -1
+1963 

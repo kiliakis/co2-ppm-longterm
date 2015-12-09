@@ -1,15 +1,21 @@
-CO2 PPM - Trends in Atmospheric Carbon Dioxide. Data are sourced from the US Government's Earth System Research Laboratory, Global Monitoring Division. Two main series are provided: the Mauna Loa series (which has the longest continuous series since 1958) and a Global Average series (a global average over marine surface sites).
+CO2 PPM Trends and CO2 PPM historical record from Vostok ice core. Trend data are sourced from the US Government's Earth System Research Laboratory, Global Monitoring Division. Two main series are provided: the Mauna Loa series (which has the longest continuous series since 1958) and a Global Average series (a global average over marine surface sites). Historical records are sourced from Carbon Dioxide Information Analysis Center. The provided dataset comes from Vostok station in East Antartica.
 
 ## Data
 
 ### Description
 
+#### Trends
 > Data are reported as a dry air mole fraction defined as the number of molecules of carbon dioxide divided by the number of all molecules in air, including CO2 itself, after water vapor has been removed. The mole fraction is expressed as parts per million (ppm). Example: 0.000400 is expressed as 400 ppm.[*][ccgg-trends]
+
+#### Historical Record
+> Age of Ice in years before BP corresponds with the age of the particular CO2 concentration measurement. 
+
 
 ### Citations
 
 1. *Trends in Atmospheric Carbon Dioxide, Mauna Loa, Hawaii.* Dr. Pieter Tans, NOAA/ESRL (www.esrl.noaa.gov/gmd/ccgg/trends/) and Dr. Ralph Keeling, Scripps Institution of Oceanography (scrippsco2.ucsd.edu/).
 1. *Trends in Atmospheric Carbon Dioxide, Global.* Ed Dlugokencky and Pieter Tans, NOAA/ESRL (www.esrl.noaa.gov/gmd/ccgg/trends/).
+1. *Historical Carbon Dioxide Record from the Vostok Ice Core.*  Barnola, J.-M., D. Raynaud, C. Lorius, and N.I. Barkov. 2003. In Trends: A Compendium of Data on Global Change. Carbon Dioxide Information Analysis Center, Oak Ridge National Laboratory, U.S. Department of Energy, Oak Ridge, Tenn., U.S.A. 
 
 ### Sources
 
@@ -19,15 +25,21 @@ CO2 PPM - Trends in Atmospheric Carbon Dioxide. Data are sourced from the US Gov
 1. 
   * Name: Trends in Atmospheric Carbon Dioxide, Global
   * Web: http://www.esrl.noaa.gov/gmd/ccgg/trends/global.html
+1. 
+  * Name: Historical Carbon Dioxide Record from the Vostok Ice Core
+  * Web: http://cdiac.ornl.gov/ftp/trends/co2/vostok.icecore.co2
 
 ## Data Preparation
+
+### Requirements
+Python 2 and Bash are required in order to process the data.
 
 ### Processing
 
 Run the following script from this directory to download and process the data:
 
 ```bash
-make data
+make
 ```
 
 ### Resources

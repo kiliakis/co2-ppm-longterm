@@ -239,17 +239,6 @@
         "series": ["Interpolated", "Trend"],
         "graphType": "lines-and-points"
       }
-    },
-    {
-      "id": "Historical Record",
-      "label": "Historical Record",
-      "resourceName": "co2-ppm-vostok",
-      "type": "Graph",
-      "state": {
-        "graphType": "lines",
-        "group": "Age of Ice",
-        "series": [ "CO2 concentration" ]
-      }
     }
   ]
 }

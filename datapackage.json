@@ -232,6 +232,7 @@
     {
       "id": "graph",
       "label": "Graph",
+      "resourceName": "co2-mm-mlo",
       "type": "Graph",
       "state": {
         "group": "Date",
@@ -242,6 +243,7 @@
     {
       "id": "Historical Record",
       "label": "Historical Record",
+      "resourceName": "co2-ppm-vostok",
       "type": "Graph",
       "state": {
         "graphType": "lines",
